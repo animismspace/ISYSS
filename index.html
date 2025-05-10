@@ -42,10 +42,16 @@
       max-width: 1000px;
       margin: auto;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
     .gallery img {
       width: 100%;
       height: auto;
-      margin-bottom: 20px;
+      display: block;
+      border-radius: 8px;
     }
     .contact-form input, .contact-form textarea {
       width: 100%;
